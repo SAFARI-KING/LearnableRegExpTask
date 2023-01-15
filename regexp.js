@@ -1,8 +1,11 @@
 "use strict";
 const prompt = require("prompt-sync")({ sigint: true });
 
+// test for 16 digits credit card number
 const cardNumber = /^\d{16}$/;
+// test for card expiry date
 const cardExDate = /^(1[0-2]|[1-9]|0[1-9])\/(2[3-9]|[3-9]\d)$/;
+// test for card type
 const cardType = /^(VISA|EXPRESS|MASTERCARD|VERVE)$/;
 
 console.log("........VALIDATE YOUR CREDIT CARD HERE!........\n");
@@ -13,6 +16,7 @@ const inputCED = prompt(" ");
 console.log("\nChoose Your Card Type: VISA|EXPRESS|MASTERCARD|VERVE:");
 const inputCT = prompt(" ");
 
+// test user details and update the user
 const updateCard = function () {
   if (
     cardNumber.test(inputCN.trim()) &&
