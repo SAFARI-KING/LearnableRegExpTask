@@ -28,7 +28,7 @@ npm install prompt-sync
 node regexp.js
 ```
 
-### SAMPLE
+#### SAMPLE
 
 > <sub>_Make sure your current file is `regexp.js`_</sub>
 
